@@ -37,7 +37,7 @@ if uploaded_file is not None:
                 texto_completo = ""
                 for segment in segments:
                     linea = f"[{segment.start:.1f}s - {segment.end:.1f}s] {segment.text}\n"
-                    texto_completo += linea
+                    # texto_completo += linea
 
                 # Mostrar resultado en pantalla
                 st.text_area("Resultado de la transcripción", texto_completo, height=350)
