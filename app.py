@@ -29,7 +29,7 @@ if uploaded_file is not None:
 
             try:
                 # Transcribir
-                segments, info = model.transcribe(tmp_path, beam_size=5)
+                segments, info = model.transcribe(tmp_path, language="es", beam_size=5)
 
                 st.success(f"¡Listo! Idioma detectado: {info.language.upper()}")
 
