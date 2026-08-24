@@ -11,7 +11,7 @@ st.write("Sube tu archivo de audio en formato .m4a para procesarlo de forma priv
 # Carga del modelo (se guarda en caché para no descargarlo cada vez)
 @st.cache_resource
 def load_model():
-    return WhisperModel("small", device="cpu", compute_type="int8")
+    return WhisperModel("medium", device="cpu", compute_type="int8")
 
 model = load_model()
 
